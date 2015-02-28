@@ -1,0 +1,31 @@
+{
+    "name": "<%= _.slugify(appname) %>",
+    "description": "",
+    "version": "0.0.1",
+    "author": "<%= creatorName %> <<%= email %>>",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/<%= githubUser %>/<%= _.slugify(appname) %>.git"
+    },
+    "bugs" : "http://github.com/<%= githubUser %>/<%= _.slugify(appname) %>/issues",
+    "dependencies": {
+        "babel-runtime": "^4.3.0"
+    },
+    "peerDependencies": {
+
+    },
+    "optionalDependencies": {
+
+    },
+    "devDependencies": {
+        "tape" : "^3.5.0",
+        "babel": "^4.3.0",
+        "glob": "^4.4.1"
+    },
+    "scripts" : {
+        "prepublish": "npm run compile",
+        "test": "npm run compile && babel-node test/harness.js test/**/*.js",
+        "compile": "babel --optional selfContained --modules common --out-dir dist lib/**.js"
+    },
+    "main": "./lib/index"
+}
