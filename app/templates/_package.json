@@ -27,5 +27,5 @@
         "test": "npm run compile && babel-node test/harness.js test/**/*.js",
         "compile": "babel --optional selfContained --modules common --out-dir dist lib/**.js"
     },
-    "main": "./lib/index"
+    "main": "./dist/lib/index"
 }
