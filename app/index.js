@@ -31,16 +31,16 @@ var ModuleGenerator = yeoman.generators.Base.extend({
       default : this.appname,
     },
     {
-      name: 'creatorName',
-      message: 'What is your name?'
+        name: 'creatorName',
+        message: 'What is your name?'
     },
     {
-      name: 'githubUser',
-      message: 'What is your github user name?'
+        name: 'githubUser',
+        message: 'What is your github user name?'
     },
     {
-      name: 'email',
-      message: 'What is your email?'
+        name: 'email',
+        message: 'What is your email?'
     }];
 
     this.prompt(prompts, function (props) {
@@ -72,6 +72,7 @@ var ModuleGenerator = yeoman.generators.Base.extend({
   projectfiles: function () {
     this.copy('gitignore', '.gitignore');
     this.copy('npmignore', '.npmignore');
+    this.copy('eslintrc', '.eslintrc');
 
     this.copy('README.md');
     this.copy('CHANGELOG.md');
