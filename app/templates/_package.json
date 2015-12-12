@@ -21,7 +21,7 @@
     "babel-plugin-syntax-async-functions": "^6.1.18",
     "babel-plugin-transform-regenerator": "^6.2.0",
     "babel-plugin-transform-runtime": "^6.3.13",
-    "babel-eslint": "^5.0.0",
+    "babel-eslint": "^4.0.0",
     "eslint": "^1.10.3",
     "istanbul": "^0.4.1",
     "tape": "^4.2.2"
@@ -31,7 +31,7 @@
     "test": "npm run compile && babel-node --presets es2015 node_modules/.bin/tape test/*.js",
     "compile": "babel --optional selfContained --out-dir dist lib/**.js",
     "lint": "eslint lib",
-    "cover": "npm run compile && babel-node node_modules/.bin/istanbul cover node_modules/.bin/tape -- test/*.js",
+    "cover": "npm run compile && babel-node node_modules/.bin/istanbul cover node_modules/.bin/tape -- test/*.js"
   },
   "babel": {
     "presets": [

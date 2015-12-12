@@ -61,8 +61,6 @@ var ModuleGenerator = yeoman.generators.Base.extend({
   },
 
   app: function () {
-
-
     this.mkdir('lib');
     this.mkdir('test');
 
@@ -79,7 +77,6 @@ var ModuleGenerator = yeoman.generators.Base.extend({
 
     this.copy('lib/index.js');
 
-    this.copy('test/harness.js');
     this.template('test/test.js', 'test/test-' + this.appname + '.js');
   }
 });
