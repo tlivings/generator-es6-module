@@ -12,7 +12,8 @@
     "node" : ">= 4.0.0"
   },
   "dependencies": {
-    "babel-runtime": "^6.3.19"
+    "babel-runtime": "^6.3.19",
+    "babel-regenerator-runtime": "^6.3.13"
   },
   "devDependencies": {
     "babel-cli": "^6.1.4",

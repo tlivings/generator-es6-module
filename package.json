@@ -1,6 +1,6 @@
 {
   "name": "generator-es6-module",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Yeoman generator for es6 based node.js modules using babel-runtime.",
   "main": "app/index.js",
   "repository": "https://github.com/tlivings/generator-es6-module",
