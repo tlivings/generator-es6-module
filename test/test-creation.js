@@ -33,7 +33,6 @@ test('module generator', function (t) {
                 'CHANGELOG.md',
                 'package.json',
                 'test/test-mymodule.js',
-                'test/harness.js',
                 'lib/index.js'
             ];
 
