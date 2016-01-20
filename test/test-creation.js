@@ -29,6 +29,7 @@ test('module generator', function (t) {
                 // add files you expect to exist here.
                 '.gitignore',
                 '.npmignore',
+                '.babelrc',
                 'README.md',
                 'CHANGELOG.md',
                 'package.json',

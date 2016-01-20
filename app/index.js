@@ -71,6 +71,7 @@ var ModuleGenerator = yeoman.generators.Base.extend({
     this.copy('gitignore', '.gitignore');
     this.copy('npmignore', '.npmignore');
     this.copy('eslintrc', '.eslintrc');
+    this.copy('babelrc', '.babelrc');
 
     this.copy('README.md');
     this.copy('CHANGELOG.md');

@@ -22,13 +22,3 @@ npm install -g generator-es6-module
 mkdir somedir && cd $_
 yo es6-module
 ```
-
-### async/await
-
-If you wish to use `await`, you will need to manually include the following line in the file using it:
-
-```javascript
-var regeneratorRuntime = require('babel-regenerator-runtime');
-```
-
-This will allow `regeneratorRuntime` to resolve properly after compile.
