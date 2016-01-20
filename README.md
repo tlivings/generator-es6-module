@@ -9,6 +9,10 @@ Supports:
 - linting using `eslint`
 - tests using `tape`
 
+Requires:
+
+- Node.js version 4+
+
 ### Install
 
 ```shell
