@@ -11,7 +11,7 @@ Supports:
 
 Requires:
 
-- Node.js version 4+
+- Node.js version 4+ (only supports ES2015 features missing from V4+)
 
 ### Install
 
